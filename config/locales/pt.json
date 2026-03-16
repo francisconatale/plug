@@ -1,0 +1,111 @@
+{
+    "common": {
+        "getStarted": "Começar",
+        "signIn": "Conecte-se",
+        "learnMore": "Saber mais",
+        "contact": "Contato",
+        "privacy": "Privacidade",
+        "terms": "Termos",
+        "allRightsReserved": "Todos os direitos reservados."
+    },
+    "layout": {
+        "titleSuffix": "O Futuro da Inovação",
+        "description": "Construindo a próxima geração de experiências digitais"
+    },
+    "navbar": {
+        "product": "Produto",
+        "features": "Características",
+        "pricing": "Preços"
+    },
+    "hero": {
+        "badge": "Agora em versão beta pública",
+        "headlineMain": "Software que se move",
+        "headlineAccent": "na velocidade do pensamento",
+        "subheadline": "Projetamos e desenvolvemos software de alto impacto que impulsiona o seu negócio. Soluções customizadas para empresas que buscam inovar e escalar sem limites.",
+        "ctaPrimary": "Comece gratuitamente",
+        "ctaSecondary": "Veja a demonstração",
+        "trustedBy": "Com a confiança das equipes em"
+    },
+    "scrollCanvas": {
+        "badge": "O futuro é agora",
+        "build": "Construir",
+        "scale": "Escala",
+        "launch": "Lança",
+        "scroll": "Role para explorar"
+    },
+    "products": {
+        "badge": "Produtos",
+        "headline": "Tudo que você precisa para escalar",
+        "items": {
+            "customSoftware": {
+                "name": "Software personalizado",
+                "tagline": "Soluções únicas para problemas únicos",
+                "description": "Desenhamos e desenvolvemos softwares personalizados que se adaptam perfeitamente aos processos da sua empresa, escaláveis ​​consigo.",
+                "features": [
+                    "Arquitetura escalável",
+                    "Design UX/UI premium",
+                    "Integrações personalizadas",
+                    "Suporte contínuo"
+                ]
+            },
+            "managementSystem": {
+                "name": "Sistema de Gestão",
+                "tagline": "O coração do seu negócio",
+                "description": "Controle estoque, vendas e finanças em um só lugar. Uma ferramenta poderosa, mas fácil de usar para a vida cotidiana.",
+                "features": [
+                    "Controle de estoque",
+                    "Relatórios financeiros",
+                    "Faturamento rápido",
+                    "Multi-filial"
+                ]
+            },
+            "deliveryModule": {
+                "name": "Módulo de entrega",
+                "tagline": "Suas ordens, sob controle",
+                "description": "Gestão inteligente de pedidos domésticos, rastreamento em tempo real e otimização de rotas para sua frota.",
+                "features": [
+                    "Rastreamento em tempo real",
+                    "App para entregadores",
+                    "Gerenciamento de zona",
+                    "Notificações push"
+                ]
+            }
+        }
+    },
+    "features": {
+        "badge": "Características",
+        "headline": "Tudo o que você precisa para crescer",
+        "items": {
+            "fast": {
+                "title": "Rápido como um raio",
+                "description": "Desenvolvimento ágil e implantação contínua para que seu software esteja pronto em tempo recorde."
+            },
+            "security": {
+                "title": "Segurança Empresarial",
+                "description": "Compatível com SOC 2 com criptografia de ponta a ponta por padrão."
+            },
+            "global": {
+                "title": "Escala Global",
+                "description": "Arquiteturas preparadas para o mercado global, escalando de acordo com a demanda de seus usuários."
+            },
+            "analytics": {
+                "title": "Análise em tempo real",
+                "description": "Monitore o desempenho com informações e métricas detalhadas."
+            }
+        }
+    },
+    "socialProof": {
+        "metrics": {
+            "requests": "Usuários impactados",
+            "uptime": "SLA de disponibilidade",
+            "response": "Tempo médio de resposta",
+            "developers": "Projetos entregues"
+        }
+    },
+    "finalCta": {
+        "headline": "Pronto para transformar sua ideia em realidade?",
+        "subheadline": "Trabalhamos junto com você para criar o software que sua empresa precisa. Vamos começar a trabalhar hoje mesmo.",
+        "cta": "Vamos conversar sobre o seu projeto",
+        "noCreditCard": "Consulta sem compromisso"
+    }
+}

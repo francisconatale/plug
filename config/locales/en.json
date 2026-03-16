@@ -1,0 +1,111 @@
+{
+    "common": {
+        "getStarted": "Begin",
+        "signIn": "Login",
+        "learnMore": "Learn more",
+        "contact": "Contact",
+        "privacy": "Privacy",
+        "terms": "Terms",
+        "allRightsReserved": "All rights reserved."
+    },
+    "layout": {
+        "titleSuffix": "The Future of Innovation",
+        "description": "Building the next generation of digital experiences"
+    },
+    "navbar": {
+        "product": "Product",
+        "features": "Characteristics",
+        "pricing": "Prices"
+    },
+    "hero": {
+        "badge": "Now in public beta",
+        "headlineMain": "Software that moves",
+        "headlineAccent": "at the speed of thought",
+        "subheadline": "We design and develop high-impact software that drives your business. Custom solutions for companies looking to innovate and scale without limits.",
+        "ctaPrimary": "Get started for free",
+        "ctaSecondary": "See demo",
+        "trustedBy": "With the trust of teams in"
+    },
+    "scrollCanvas": {
+        "badge": "The future is now",
+        "build": "Build",
+        "scale": "Scale",
+        "launch": "Lance",
+        "scroll": "Scroll to explore"
+    },
+    "products": {
+        "badge": "Products",
+        "headline": "Everything you need to climb",
+        "items": {
+            "customSoftware": {
+                "name": "Custom Software",
+                "tagline": "Unique solutions for unique problems",
+                "description": "We design and develop custom software that adapts perfectly to your company's processes, scaling with you.",
+                "features": [
+                    "Scalable architecture",
+                    "Premium UX/UI Design",
+                    "Custom integrations",
+                    "Ongoing support"
+                ]
+            },
+            "managementSystem": {
+                "name": "Management System",
+                "tagline": "The heart of your business",
+                "description": "Control inventory, sales and finances in one place. A powerful but easy-to-use tool for everyday life.",
+                "features": [
+                    "Stock control",
+                    "Financial reports",
+                    "Quick billing",
+                    "Multi-branch"
+                ]
+            },
+            "deliveryModule": {
+                "name": "Delivery Module",
+                "tagline": "Your orders, under control",
+                "description": "Intelligent management of home orders, real-time tracking and route optimization for your fleet.",
+                "features": [
+                    "Real-time tracking",
+                    "App for delivery people",
+                    "Zone management",
+                    "Push notifications"
+                ]
+            }
+        }
+    },
+    "features": {
+        "badge": "Characteristics",
+        "headline": "Everything you need to grow",
+        "items": {
+            "fast": {
+                "title": "Fast as lightning",
+                "description": "Agile development and continuous deployment so your software is ready in record time."
+            },
+            "security": {
+                "title": "Business Security",
+                "description": "SOC 2 compliant with end-to-end encryption by default."
+            },
+            "global": {
+                "title": "Global Scale",
+                "description": "Architectures prepared for the global market, scaling according to the demand of your users."
+            },
+            "analytics": {
+                "title": "Real Time Analytics",
+                "description": "Monitor performance with detailed information and metrics."
+            }
+        }
+    },
+    "socialProof": {
+        "metrics": {
+            "requests": "Impacted users",
+            "uptime": "Availability SLA",
+            "response": "Average response time",
+            "developers": "Projects delivered"
+        }
+    },
+    "finalCta": {
+        "headline": "Ready to turn your idea into reality?",
+        "subheadline": "We work with you to create the software your company needs. Let's start working today.",
+        "cta": "Let's talk about your project",
+        "noCreditCard": "Consultation without commitment"
+    }
+}
