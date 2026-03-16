@@ -184,7 +184,10 @@ export function ScrollCanvas({ scrollT }: ScrollCanvasProps) {
           >
             {currentSection.word}
           </h2>
-          <p className="mt-4 sm:mt-6 max-w-xs sm:max-w-md text-center text-base sm:text-lg text-muted-foreground leading-relaxed">
+          <p
+            className="mt-4 sm:mt-6 max-w-xs sm:max-w-md text-center text-base sm:text-lg text-muted-foreground leading-relaxed transition-opacity duration-300"
+            style={{ opacity: Math.max(0, 1 - progress * 10) }}
+          >
             {scrollT.scroll}
           </p>
         </div>

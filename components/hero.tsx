@@ -43,10 +43,10 @@ export function Hero({ heroT }: HeroProps) {
             {heroT.trustedBy}
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-8 opacity-50 grayscale sm:gap-12">
-            <div className="text-xl font-bold sm:text-2xl">ACME</div>
-            <div className="text-xl font-bold sm:text-2xl">GLOBEX</div>
-            <div className="text-xl font-bold sm:text-2xl">SOYLENT</div>
-            <div className="text-xl font-bold sm:text-2xl">INITECH</div>
+            <div className="text-xl font-bold sm:text-xl">STARTUPS QUE ARRANCAN</div>
+            <div className="text-xl font-bold sm:text-xl">NEGOCIOS QUE ESCALAN</div>
+            <div className="text-xl font-bold sm:text-xl">EQUIPOS QUE SE ORDENAN</div>
+            <div className="text-xl font-bold sm:text-xl">IDEAS QUE NECESITAN FORMA</div>
           </div>
         </div>
       </div>
