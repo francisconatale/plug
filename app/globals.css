@@ -4,74 +4,74 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #0a0a0f;
-  --foreground: #ffffff;
-  --card: #111116;
-  --card-foreground: #ffffff;
-  --popover: #0d0d12;
-  --popover-foreground: #ffffff;
-  --primary: #00d4ff;
-  --primary-foreground: #0a0a0f;
-  --secondary: #16161d;
-  --secondary-foreground: #ffffff;
-  --muted: #1a1a22;
-  --muted-foreground: #71717a;
-  --accent: #00d4ff;
-  --accent-foreground: #0a0a0f;
-  --destructive: #ef4444;
+  --background: #ffffff;
+  --foreground: #0a0a0a;
+  --card: #f7f7f7;
+  --card-foreground: #0a0a0a;
+  --popover: #ffffff;
+  --popover-foreground: #0a0a0a;
+  --primary: #ff1a1a;
+  --primary-foreground: #ffffff;
+  --secondary: #f0f0f0;
+  --secondary-foreground: #0a0a0a;
+  --muted: #f4f4f4;
+  --muted-foreground: #737373;
+  --accent: #ff1a1a;
+  --accent-foreground: #ffffff;
+  --destructive: #cc0000;
   --destructive-foreground: #ffffff;
-  --border: #222230;
-  --input: #16161d;
-  --ring: #00d4ff;
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
+  --border: #e5e5e5;
+  --input: #f0f0f0;
+  --ring: #ff1a1a;
+  --chart-1: oklch(0.55 0.22 25);
+  --chart-2: oklch(0.60 0.18 35);
+  --chart-3: oklch(0.65 0.20 15);
+  --chart-4: oklch(0.62 0.25 30);
+  --chart-5: oklch(0.68 0.24 20);
   --radius: 0.5rem;
-  --sidebar: oklch(0.1 0 0);
-  --sidebar-foreground: oklch(0.98 0 0);
-  --sidebar-primary: oklch(0.7 0.15 200);
-  --sidebar-primary-foreground: oklch(0.08 0 0);
-  --sidebar-accent: oklch(0.18 0 0);
-  --sidebar-accent-foreground: oklch(0.98 0 0);
-  --sidebar-border: oklch(0.25 0 0);
-  --sidebar-ring: oklch(0.7 0.15 200);
+  --sidebar: oklch(0.97 0 0);
+  --sidebar-foreground: oklch(0.12 0 0);
+  --sidebar-primary: oklch(0.55 0.22 25);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.93 0 0);
+  --sidebar-accent-foreground: oklch(0.12 0 0);
+  --sidebar-border: oklch(0.88 0 0);
+  --sidebar-ring: oklch(0.55 0.22 25);
 }
 
 .dark {
-  --background: #0a0a0f;
+  --background: #0a0a0b;
   --foreground: #ffffff;
-  --card: #111116;
+  --card: #130a0a;
   --card-foreground: #ffffff;
-  --popover: #0d0d12;
+  --popover: #100808;
   --popover-foreground: #ffffff;
-  --primary: #00d4ff;
-  --primary-foreground: #0a0a0f;
-  --secondary: #16161d;
+  --primary: #ff1a1a;
+  --primary-foreground: #ffffff;
+  --secondary: #1c1010;
   --secondary-foreground: #ffffff;
-  --muted: #1a1a22;
-  --muted-foreground: #71717a;
-  --accent: #00d4ff;
-  --accent-foreground: #0a0a0f;
-  --destructive: #ef4444;
+  --muted: #221414;
+  --muted-foreground: #8a6e6e;
+  --accent: #ff1a1a;
+  --accent-foreground: #ffffff;
+  --destructive: #cc0000;
   --destructive-foreground: #ffffff;
-  --border: #222230;
-  --input: #16161d;
-  --ring: #00d4ff;
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.1 0 0);
+  --border: #2e1515;
+  --input: #1c1010;
+  --ring: #ff1a1a;
+  --chart-1: oklch(0.55 0.22 25);
+  --chart-2: oklch(0.65 0.18 35);
+  --chart-3: oklch(0.75 0.20 15);
+  --chart-4: oklch(0.62 0.25 30);
+  --chart-5: oklch(0.68 0.24 20);
+  --sidebar: oklch(0.08 0.02 20);
   --sidebar-foreground: oklch(0.98 0 0);
-  --sidebar-primary: oklch(0.7 0.15 200);
-  --sidebar-primary-foreground: oklch(0.08 0 0);
-  --sidebar-accent: oklch(0.18 0 0);
+  --sidebar-primary: oklch(0.55 0.22 25);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.15 0.04 25);
   --sidebar-accent-foreground: oklch(0.98 0 0);
-  --sidebar-border: oklch(0.25 0 0);
-  --sidebar-ring: oklch(0.7 0.15 200);
+  --sidebar-border: oklch(0.22 0.04 25);
+  --sidebar-ring: oklch(0.55 0.22 25);
 }
 
 @theme inline {
@@ -119,6 +119,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }

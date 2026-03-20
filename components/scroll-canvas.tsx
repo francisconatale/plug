@@ -16,7 +16,7 @@ export function ScrollCanvas({ scrollT }: ScrollCanvasProps) {
 
   const updateCanvas = useCallback((ctx: CanvasRenderingContext2D, width: number, height: number, progress: number) => {
     // Clear canvas
-    ctx.fillStyle = "#0a0a0f"
+    ctx.fillStyle = "#ffffff"
     ctx.fillRect(0, 0, width, height)
 
     // Draw animated geometric shapes based on scroll progress
@@ -29,8 +29,8 @@ export function ScrollCanvas({ scrollT }: ScrollCanvasProps) {
 
     // Glow effect
     const gradient = ctx.createRadialGradient(centerX, centerY, 0, centerX, centerY, radius * 1.5)
-    gradient.addColorStop(0, "rgba(0, 212, 255, 0.15)")
-    gradient.addColorStop(0.5, "rgba(0, 212, 255, 0.05)")
+    gradient.addColorStop(0, "rgba(255, 26, 26, 0.12)")
+    gradient.addColorStop(0.5, "rgba(255, 26, 26, 0.04)")
     gradient.addColorStop(1, "transparent")
     ctx.fillStyle = gradient
     ctx.beginPath()
@@ -38,20 +38,20 @@ export function ScrollCanvas({ scrollT }: ScrollCanvasProps) {
     ctx.fill()
 
     // Main ring
-    ctx.strokeStyle = "#00d4ff"
+    ctx.strokeStyle = "#ff1a1a"
     ctx.lineWidth = 2
     ctx.beginPath()
     ctx.arc(centerX, centerY, radius, 0, Math.PI * 2 * progress)
     ctx.stroke()
 
     // Secondary rings
-    ctx.strokeStyle = "rgba(0, 212, 255, 0.3)"
+    ctx.strokeStyle = "rgba(255, 26, 26, 0.25)"
     ctx.lineWidth = 1
     ctx.beginPath()
     ctx.arc(centerX, centerY, radius * 0.7, 0, Math.PI * 2)
     ctx.stroke()
 
-    ctx.strokeStyle = "rgba(0, 212, 255, 0.15)"
+    ctx.strokeStyle = "rgba(255, 26, 26, 0.12)"
     ctx.beginPath()
     ctx.arc(centerX, centerY, radius * 1.3, 0, Math.PI * 2)
     ctx.stroke()
@@ -63,7 +63,7 @@ export function ScrollCanvas({ scrollT }: ScrollCanvasProps) {
       const lineLength = radius * 0.3
       const startRadius = radius * 0.8
 
-      ctx.strokeStyle = `rgba(0, 212, 255, ${0.2 + (i / numLines) * 0.3})`
+      ctx.strokeStyle = `rgba(255, 26, 26, ${0.15 + (i / numLines) * 0.25})`
       ctx.lineWidth = 1
       ctx.beginPath()
       ctx.moveTo(
@@ -78,7 +78,7 @@ export function ScrollCanvas({ scrollT }: ScrollCanvasProps) {
     }
 
     // Center dot
-    ctx.fillStyle = "#00d4ff"
+    ctx.fillStyle = "#ff1a1a"
     ctx.beginPath()
     ctx.arc(centerX, centerY, 4, 0, Math.PI * 2)
     ctx.fill()
@@ -92,7 +92,7 @@ export function ScrollCanvas({ scrollT }: ScrollCanvasProps) {
       const size = 2 * (1 - particleProgress)
       const opacity = 0.5 * (1 - particleProgress)
 
-      ctx.fillStyle = `rgba(0, 212, 255, ${opacity})`
+      ctx.fillStyle = `rgba(255, 26, 26, ${opacity})`
       ctx.beginPath()
       ctx.arc(
         centerX + Math.cos(angle) * distance,
