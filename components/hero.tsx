@@ -14,97 +14,112 @@ export function Hero({ heroT }: HeroProps) {
   const siteName = siteConfig.name.toUpperCase()
 
   return (
-    <section className="relative min-h-screen px-6 md:px-12 lg:px-20 pt-28 pb-20 overflow-hidden bg-background">
-      {/* ── Top editorial labels (Justify-Between) ── */}
-      <div className="flex justify-between items-start text-[10px] md:text-xs tracking-[0.2em] text-primary/40 uppercase">
-        <span>— {siteName} / 2026</span>
-        <div className="text-center hidden md:block opacity-60">
-          <p className="text-[9px] leading-tight italic normal-case max-w-[180px]">
-            High-impact software development for modern business.
-          </p>
+    <section className="relative px-6 md:px-12 lg:px-20 pt-32 pb-20 bg-background overflow-hidden">
+      {/* ── Editorial Grid Header ── */}
+      <div className="max-w-7xl mx-auto flex justify-between items-center border-b border-primary/5 pb-8 mb-12">
+        <div className="flex flex-col gap-1">
+          <span className="text-[10px] tracking-[0.3em] text-primary/40 uppercase">Project / Stage 01</span>
+          <motion.div
+            className="border border-primary/20 px-4 py-1 text-[9px] font-bold tracking-[0.2em] text-primary/60 uppercase cursor-pointer hover:border-primary hover:text-primary transition-all w-fit"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            {heroT.ctaSecondary}
+          </motion.div>
         </div>
-        <span>— DIGITAL STUDIO</span>
+
+        <div className="hidden lg:flex flex-col items-center gap-1 opacity-20">
+          <span className="text-[10px] tracking-widest text-primary uppercase">Coordinates — 34.6037° S, 58.3816° W</span>
+          <div className="w-40 h-px bg-primary/30" />
+        </div>
+
+        <div className="text-right flex flex-col gap-1">
+          <span className="text-[10px] tracking-[0.3em] text-primary/40 uppercase">— DIGITAL STUDIO</span>
+          <span className="text-[9px] font-mono text-primary/20">EST. 2026</span>
+        </div>
       </div>
 
-      {/* ── Pill button (Centered) ── */}
-      <div className="flex justify-center mt-6">
+      {/* ── Symmetrical Central Statement ── */}
+      <div className="max-w-4xl mx-auto relative group">
+        {/* The Box */}
         <motion.div
-          className="border border-primary/20 px-5 py-1.5 text-[9px] font-bold tracking-[0.3em] text-primary/80 uppercase cursor-pointer hover:border-primary hover:text-primary transition-all"
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
+          className="relative w-full aspect-[21/9] bg-primary overflow-hidden shadow-2xl"
+          initial={{ opacity: 0, scale: 0.98 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          {heroT.ctaSecondary}
-        </motion.div>
-      </div>
+          {/* Internal Grid Lines */}
+          <div className="absolute inset-0 opacity-10 pointer-events-none">
+            <div className="absolute left-1/4 top-0 bottom-0 w-px bg-white" />
+            <div className="absolute left-2/4 top-0 bottom-0 w-px bg-white" />
+            <div className="absolute left-3/4 top-0 bottom-0 w-px bg-white" />
+          </div>
 
-      {/* ── Compact Visual Block ── */}
-      <div className="relative mt-8 max-w-xl mx-auto z-10">
-        {/* Simple Blue Box (Compact Ratio) */}
-        <motion.div
-          className="relative aspect-[2/1] overflow-hidden bg-primary shadow-sm"
-          initial={{ opacity: 0, y: 15 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          {/* Subtle gradient, no noise/texture */}
-          <div
-            className="absolute inset-0 opacity-20"
-            style={{
-              background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(0,0,0,0.1) 100%)'
-            }}
-          />
+          <div className="absolute inset-0 flex items-center justify-center p-8 z-10">
+            <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-white tracking-tighter leading-none text-center drop-shadow-lg">
+              HIGH IMPACT TECHNOLOGY
+            </h1>
+          </div>
+
+          {/* Corner Elements */}
+          <div className="absolute top-4 left-4 text-[8px] text-white/30 tracking-widest">H.I.T. SYSTEM</div>
+          <div className="absolute bottom-4 right-4 text-[8px] text-white/30 tracking-widest">VER 1.5.0</div>
         </motion.div>
 
-        {/* SITE NAME — The single clear brand element */}
+        {/* The Watermark — Perfectly aligned to the width of the box */}
         <motion.div
-          className="absolute -bottom-8 md:-bottom-12 left-0 right-0 text-center pointer-events-none select-none z-20"
-          initial={{ opacity: 0, y: 25 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          className="mt-4 text-center select-none"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.3 }}
         >
-          <h1 className="font-[family-name:var(--font-display)] text-[18vw] md:text-[15vw] text-primary tracking-tighter leading-none m-0 p-0">
+          <span
+            className="font-[family-name:var(--font-display)] text-primary/5 tracking-tighter leading-none block uppercase"
+            style={{ fontSize: 'clamp(4rem, 16vw, 15rem)' }}
+          >
             {siteName}
-          </h1>
+          </span>
         </motion.div>
       </div>
 
-      {/* ── Core Messaging Zone ── */}
-      <div className="relative mt-24 md:mt-32 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-end">
-        {/* Left: Script sign + Main Heading + Description */}
+      {/* ── Symmetrical Bottom Messaging ── */}
+      <div className="max-w-7xl mx-auto mt-20 grid grid-cols-1 lg:grid-cols-3 gap-12 items-center text-center lg:text-left">
+        {/* Left: Script sign */}
         <motion.div
-          className="space-y-6"
-          initial={{ opacity: 0, x: -15 }}
+          initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
         >
-          <span className="font-[family-name:var(--font-script)] text-3xl md:text-4xl text-primary/40 italic block lowercase">
+          <span className="font-[family-name:var(--font-script)] text-4xl md:text-5xl text-primary/40 italic lowercase">
             {heroT.headlineMain}
           </span>
-          <h2 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl md:text-6xl text-primary tracking-tight leading-[0.9] uppercase max-w-lg">
+        </motion.div>
+
+        {/* Center: Main Headline */}
+        <motion.div
+          className="lg:col-span-1"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl text-primary tracking-tight leading-tight uppercase">
             {heroT.headlineAccent}
           </h2>
-          <p className="max-w-md text-sm text-muted-foreground leading-relaxed font-sans">
+          <p className="mt-4 text-sm text-muted-foreground leading-relaxed max-w-sm mx-auto lg:mx-0">
             {heroT.subheadline}
           </p>
         </motion.div>
 
-        {/* Right: CTA & Decorative elements */}
+        {/* Right: CTA Button */}
         <motion.div
-          className="flex flex-col items-start md:items-end gap-10"
-          initial={{ opacity: 0, x: 15 }}
+          className="flex justify-center lg:justify-end"
+          initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
         >
-          <div className="text-right hidden md:block opacity-40">
-            <span className="text-[10px] tracking-widest text-muted-foreground uppercase opacity-50 block mb-1">Visual ID / V1.5</span>
-            <div className="flex gap-1 justify-end text-primary text-xs">
-              <span>✦</span><span>✦</span><span>✦</span>
-            </div>
-          </div>
-
           <Button
             size="lg"
-            className="border border-primary bg-primary text-primary-foreground hover:bg-transparent hover:text-primary text-[10px] font-bold uppercase tracking-[0.2em] px-10 py-7 h-auto transition-all duration-300"
+            className="bg-primary text-primary-foreground hover:bg-transparent hover:text-primary border-2 border-primary text-[11px] font-bold uppercase tracking-[0.2em] px-12 py-7 h-auto transition-all duration-500 rounded-none"
           >
             {heroT.ctaPrimary}
             <ArrowRight className="ml-2 h-4 w-4" />
@@ -112,9 +127,14 @@ export function Hero({ heroT }: HeroProps) {
         </motion.div>
       </div>
 
-      {/* Bottom bar */}
-      <div className="absolute left-6 bottom-10 text-[9px] tracking-[0.2em] text-muted-foreground/40 uppercase pointer-events-none">
-        All rights reserved — Digital Studio 2026
+      {/* Grid Lines Overlay (Background) */}
+      <div className="absolute inset-0 pointer-events-none opacity-[0.03] -z-10">
+        <div className="absolute left-1/4 top-0 bottom-0 w-px bg-primary" />
+        <div className="absolute left-2/4 top-0 bottom-0 w-px bg-primary" />
+        <div className="absolute left-3/4 top-0 bottom-0 w-px bg-primary" />
+        <div className="absolute top-1/4 left-0 right-0 h-px bg-primary" />
+        <div className="absolute top-2/4 left-0 right-0 h-px bg-primary" />
+        <div className="absolute top-3/4 left-0 right-0 h-px bg-primary" />
       </div>
     </section>
   )

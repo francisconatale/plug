@@ -14,7 +14,6 @@ export default async function HomePage() {
 
   return (
     <main className="min-h-screen bg-background relative overflow-hidden">
-      {/* Paper texture overlay */}
       <div
         className="fixed inset-0 pointer-events-none opacity-30 z-50"
         style={{
@@ -24,7 +23,6 @@ export default async function HomePage() {
 
       <Navbar navT={t.navbar} commonT={t.common} currentLocale={locale} />
       <Hero heroT={t.hero} />
-      <ScrollCanvas scrollT={t.scrollCanvas} />
       <FeaturesGrid featuresT={t.features} />
       <SocialProof socialT={t.socialProof} />
       <FinalCTA finalT={t.finalCta} />
