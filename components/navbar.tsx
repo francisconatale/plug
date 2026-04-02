@@ -18,9 +18,7 @@ export function Navbar({ navT, commonT, currentLocale }: NavbarProps) {
 
   const navLinks = [
     { href: "/products", label: navT.product },
-    { href: "#features", label: navT.features },
-    { href: "#pricing", label: navT.pricing },
-    { href: "/referidos", label: navT.referidos },
+    { href: "/referrals", label: navT.referidos },
   ]
 
   const [isScrolled, setIsScrolled] = useState(false)
