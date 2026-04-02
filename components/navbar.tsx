@@ -20,6 +20,7 @@ export function Navbar({ navT, commonT, currentLocale }: NavbarProps) {
     { href: "/products", label: navT.product },
     { href: "#features", label: navT.features },
     { href: "#pricing", label: navT.pricing },
+    { href: "/referidos", label: navT.referidos },
   ]
 
   const [isScrolled, setIsScrolled] = useState(false)
@@ -36,8 +37,8 @@ export function Navbar({ navT, commonT, currentLocale }: NavbarProps) {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-          ? "bg-background/95 backdrop-blur-md border-b border-border py-2"
-          : "bg-transparent py-4"
+        ? "bg-background/95 backdrop-blur-md border-b border-border py-2"
+        : "bg-transparent py-4"
         }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 md:px-12 lg:px-20">

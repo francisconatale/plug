@@ -15,7 +15,8 @@
     "navbar": {
         "product": "Productos",
         "features": "Cómo trabajamos",
-        "pricing": "Presupuesto"
+        "pricing": "Presupuesto",
+        "referidos": "Referidos"
     },
     "hero": {
         "badge": "Soluciones reales para problemas reales",
@@ -107,5 +108,96 @@
         "subheadline": "Contanos qué problema querés resolver y cuánto tenés para invertir. Nosotros te decimos qué se puede hacer y cómo hacerlo bien.",
         "cta": "Hablemos sin compromiso",
         "noCreditCard": "Primera consulta gratis"
+    },
+    "referidos": {
+        "hero": {
+            "badge": "Programa de Referidos",
+            "headline": "Ganá hasta 30% de comisión recomendando nuestros productos comerciales o desarrollo a medida.",
+            "subheadline": "Ayudá a otras empresas a resolver sus problemas con nuestras soluciones listas para usar o software personalizado. Llevate una comisión por cada venta.",
+            "mainBenefit": "Hasta 30% de comisión por cada venta.",
+            "ctaPrimary": "Convertirme en referidor",
+            "ctaSecondary": "Enviar un cliente"
+        },
+        "howItWorks": {
+            "badge": "Cómo funciona",
+            "headline": "3 pasos simples",
+            "steps": [
+                {
+                    "num": "01",
+                    "title": "Presentás el cliente",
+                    "description": "Nos compartís el contacto de la empresa interesada."
+                },
+                {
+                    "num": "02",
+                    "title": "Nosotros cerramos la venta",
+                    "description": "Nuestro equipo se encarga de la demo, propuesta y cierre."
+                },
+                {
+                    "num": "03",
+                    "title": "Cobrás tu comisión",
+                    "description": "Recibís tu comisión cuando el cliente paga la factura."
+                }
+            ]
+        },
+        "earnings": {
+            "badge": "Cuánto podés ganar",
+            "headline": "Comisiones claras",
+            "tableHeaders": ["Tipo", "Qué hacés", "Comisión"],
+            "rows": [
+                {
+                    "type": "Referido asistido",
+                    "action": "Presentás el cliente",
+                    "commission": "15%"
+                },
+                {
+                    "type": "Referido completo",
+                    "action": "Gestionás la venta",
+                    "commission": "30%"
+                }
+            ],
+            "footnote": "La comisión se calcula sobre el valor neto de la primera venta."
+        },
+        "payment": {
+            "badge": "Cuándo se paga",
+            "headline": "Sin vueltas",
+            "conditions": [
+                "Cuando el cliente firma el contrato",
+                "Cuando se emite la primera factura",
+                "Cuando el pago se acredita"
+            ],
+            "footnote": "El pago se realiza dentro de los 30 días."
+        },
+        "whoCanJoin": {
+            "badge": "Quién puede participar",
+            "headline": "Abierto a todos",
+            "items": [
+                "Clientes actuales",
+                "Partners",
+                "Consultores",
+                "Personas con contactos en empresas"
+            ]
+        },
+        "keyCondition": {
+            "badge": "Condición clave",
+            "headline": "El referido debe registrarse antes del primer contacto comercial.",
+            "description": "Esto asegura que la comisión quede asociada correctamente."
+        },
+        "example": {
+            "badge": "Ejemplo rápido",
+            "headline": "Así funciona en números",
+            "saleLabel": "Venta:",
+            "saleAmount": "$300",
+            "commissions": [
+                { "label": "Comisión 15%", "amount": "$45" },
+                { "label": "Comisión 30%", "amount": "$90" }
+            ],
+            "installmentsNote": "Si el cliente paga en cuotas, la comisión se paga proporcionalmente."
+        },
+        "finalCta": {
+            "headline": "¿Conocés a una empresa que necesite nuestros productos o software a medida?",
+            "ctaPrimary": "Enviar un referido",
+            "ctaSecondary": "Hablar con nosotros"
+        },
+        "legalLink": "Términos completos del programa de referidos"
     }
 }

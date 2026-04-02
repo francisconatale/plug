@@ -22,7 +22,7 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: `Plug | ${dictionaries[defaultLocale].layout.titleSuffix}`,
+  title: `Hitlabs | ${dictionaries[defaultLocale].layout.titleSuffix}`,
   description: dictionaries[defaultLocale].layout.description,
 }
 

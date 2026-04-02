@@ -15,7 +15,8 @@
     "navbar": {
         "product": "Products",
         "features": "How we work",
-        "pricing": "Budget"
+        "pricing": "Budget",
+        "referidos": "Referrals"
     },
     "hero": {
         "badge": "Real solutions for real problems",
@@ -107,5 +108,96 @@
         "subheadline": "Tell us what problem you want to solve and how much you have to invest. We tell you what can be done and how to do it well.",
         "cta": "Let's talk without obligation",
         "noCreditCard": "Free first consultation"
+    },
+    "referidos": {
+        "hero": {
+            "badge": "Referral Program",
+            "headline": "Earn up to 30% commission by referring our products or custom software development.",
+            "subheadline": "Help other businesses solve their problems with our ready-to-use solutions or tailor-made software, and earn a commission per sale.",
+            "mainBenefit": "Up to 30% commission per sale.",
+            "ctaPrimary": "Become a referrer",
+            "ctaSecondary": "Submit a client"
+        },
+        "howItWorks": {
+            "badge": "How it works",
+            "headline": "3 simple steps",
+            "steps": [
+                {
+                    "num": "01",
+                    "title": "You introduce the client",
+                    "description": "Share the contact details of the interested company with us."
+                },
+                {
+                    "num": "02",
+                    "title": "We close the deal",
+                    "description": "Our team handles the demo, proposal, and closing."
+                },
+                {
+                    "num": "03",
+                    "title": "You earn commission",
+                    "description": "Receive your commission when the client pays their invoice."
+                }
+            ]
+        },
+        "earnings": {
+            "badge": "How much you can earn",
+            "headline": "Clear commissions",
+            "tableHeaders": ["Type", "Your role", "Commission"],
+            "rows": [
+                {
+                    "type": "Assisted referral",
+                    "action": "Introduce the client",
+                    "commission": "15%"
+                },
+                {
+                    "type": "Full referral",
+                    "action": "Manage the sale",
+                    "commission": "30%"
+                }
+            ],
+            "footnote": "Commission is calculated on the net value of the first sale."
+        },
+        "payment": {
+            "badge": "When it's paid",
+            "headline": "Straightforward",
+            "conditions": [
+                "When the client signs the contract",
+                "When the first invoice is issued",
+                "When payment is credited"
+            ],
+            "footnote": "Payment is made within 30 days."
+        },
+        "whoCanJoin": {
+            "badge": "Who can join",
+            "headline": "Open to everyone",
+            "items": [
+                "Current clients",
+                "Partners",
+                "Consultants",
+                "People with business contacts"
+            ]
+        },
+        "keyCondition": {
+            "badge": "Key Condition",
+            "headline": "The referral must be registered before the first commercial contact.",
+            "description": "This ensures the commission is correctly linked to you."
+        },
+        "example": {
+            "badge": "Quick Example",
+            "headline": "Here's how it works in numbers",
+            "saleLabel": "Sale:",
+            "saleAmount": "$300",
+            "commissions": [
+                { "label": "15% Commission", "amount": "$45" },
+                { "label": "30% Commission", "amount": "$90" }
+            ],
+            "installmentsNote": "If the client pays in installments, the commission is paid proportionally."
+        },
+        "finalCta": {
+            "headline": "Do you know a company that needs our products or custom software?",
+            "ctaPrimary": "Submit a referral",
+            "ctaSecondary": "Talk to us"
+        },
+        "legalLink": "Full Referral Program Terms"
     }
 }

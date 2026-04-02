@@ -15,7 +15,8 @@
     "navbar": {
         "product": "Produtos",
         "features": "Como trabalhamos",
-        "pricing": "Orçamento"
+        "pricing": "Orçamento",
+        "referidos": "Indicações"
     },
     "hero": {
         "badge": "Soluções reais para problemas reais",
@@ -107,5 +108,96 @@
         "subheadline": "Diga-nos qual problema você quer resolver e quanto você tem para investir. Dizemos o que pode ser feito e como fazê-lo bem.",
         "cta": "Vamos conversar sem compromisso",
         "noCreditCard": "Primeira consulta gratuita"
+    },
+    "referidos": {
+        "hero": {
+            "badge": "Programa de Indicação",
+            "headline": "Ganhe até 30% de comissão indicando nossos produtos ou desenvolvimento de software sob medida.",
+            "subheadline": "Ajude outras empresas a resolver seus problemas com nossas soluções prontas ou software personalizado, e ganhe uma comissão por venda.",
+            "mainBenefit": "Até 30% de comissão por venda.",
+            "ctaPrimary": "Tornar-se um parceiro",
+            "ctaSecondary": "Enviar um cliente"
+        },
+        "howItWorks": {
+            "badge": "Como funciona",
+            "headline": "3 passos simples",
+            "steps": [
+                {
+                    "num": "01",
+                    "title": "Você apresenta o cliente",
+                    "description": "Compartilhe o contato da empresa interessada conosco."
+                },
+                {
+                    "num": "02",
+                    "title": "Nós fechamos a venda",
+                    "description": "Nossa equipe cuida da demonstração, proposta e fechamento."
+                },
+                {
+                    "num": "03",
+                    "title": "Você ganha comissão",
+                    "description": "Receba sua comissão quando o cliente pagar a fatura."
+                }
+            ]
+        },
+        "earnings": {
+            "badge": "Quanto você pode ganhar",
+            "headline": "Comissões claras",
+            "tableHeaders": ["Tipo", "Seu papel", "Comissão"],
+            "rows": [
+                {
+                    "type": "Indicação assistida",
+                    "action": "Apresenta o cliente",
+                    "commission": "15%"
+                },
+                {
+                    "type": "Indicação completa",
+                    "action": "Gerencia a venda",
+                    "commission": "30%"
+                }
+            ],
+            "footnote": "A comissão é calculada sobre o valor líquido da primeira venda."
+        },
+        "payment": {
+            "badge": "Quando é pago",
+            "headline": "Sem enrolação",
+            "conditions": [
+                "Quando o cliente assina o contrato",
+                "Quando a primeira fatura é emitida",
+                "Quando o pagamento for efetuado"
+            ],
+            "footnote": "O pagamento é efetuado em até 30 dias."
+        },
+        "whoCanJoin": {
+            "badge": "Quem pode participar",
+            "headline": "Aberto a todos",
+            "items": [
+                "Clientes atuais",
+                "Parceiros",
+                "Consultores",
+                "Pessoas com contatos de negócios"
+            ]
+        },
+        "keyCondition": {
+            "badge": "Condição Principal",
+            "headline": "O cliente indicado deve ser registrado antes do primeiro contato comercial.",
+            "description": "Isso garante que a comissão seja vinculada corretamente a você."
+        },
+        "example": {
+            "badge": "Exemplo Rápido",
+            "headline": "Veja como funciona na prática",
+            "saleLabel": "Venda:",
+            "saleAmount": "$300",
+            "commissions": [
+                { "label": "Comissão de 15%", "amount": "$45" },
+                { "label": "Comissão de 30%", "amount": "$90" }
+            ],
+            "installmentsNote": "Se o cliente pagar parcelado, a comissão é paga proporcionalmente."
+        },
+        "finalCta": {
+            "headline": "Você conhece uma empresa que precisa de produtos ou software sob medida?",
+            "ctaPrimary": "Enviar indicação",
+            "ctaSecondary": "Fale conosco"
+        },
+        "legalLink": "Termos Completos do Programa"
     }
 }

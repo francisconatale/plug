@@ -10,10 +10,9 @@ interface SocialProofProps {
 export function SocialProof({ socialT }: SocialProofProps) {
 
   const metrics = [
-    { value: "10M+", label: socialT.metrics.requests },
+    { value: "10+", label: socialT.metrics.requests },
     { value: "99.99%", label: socialT.metrics.uptime },
-    { value: "150ms", label: socialT.metrics.response },
-    { value: "50K+", label: socialT.metrics.developers },
+    { value: "< 30 days", label: socialT.metrics.response },
   ]
 
   return (
@@ -25,7 +24,7 @@ export function SocialProof({ socialT }: SocialProofProps) {
         <div className="flex-1 h-px bg-border" />
       </div>
 
-      <div className="grid grid-cols-2 gap-6 sm:gap-8 md:grid-cols-4 max-w-6xl mx-auto">
+      <div className="grid grid-cols-2 gap-6 sm:gap-8 md:grid-cols-3 max-w-6xl mx-auto">
         {metrics.map((metric, i) => (
           <motion.div
             key={metric.label}
