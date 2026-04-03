@@ -16,28 +16,37 @@ export function ContactForm({ contactT }: ContactFormProps) {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
+        access_key: "51f4111a-641c-480e-a9bb-2cceeb7bb902",
         message: ""
     })
     const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle")
 
-    const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         setStatus("sending")
+        const form = e.currentTarget
 
         try {
-            const response = await fetch("/api/contact", {
+            const formData = new FormData(form)
+            formData.append("access_key", "51f4111a-641c-480e-a9bb-2cceeb7bb902")
+
+            const response = await fetch("https://api.web3forms.com/submit", {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(formData),
+                body: formData,
             })
 
-            if (response.ok) {
+            const data = await response.json()
+
+            if (data.success) {
                 setStatus("success")
-                setFormData({ name: "", email: "", message: "" })
+                form.reset()
+                setFormData({ name: "", email: "", access_key: "51f4111a-641c-480e-a9bb-2cceeb7bb902", message: "" })
             } else {
+                console.error("Web3Forms Error:", data)
                 setStatus("error")
             }
         } catch (error) {
+            console.error("Submission Error:", error)
             setStatus("error")
         }
     }
@@ -47,7 +56,7 @@ export function ContactForm({ contactT }: ContactFormProps) {
     }
 
     return (
-        <motion.div 
+        <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -58,7 +67,7 @@ export function ContactForm({ contactT }: ContactFormProps) {
                     <label htmlFor="name" className="block text-[10px] tracking-[0.3em] text-primary/60 uppercase mb-2">
                         {contactT.form.name}
                     </label>
-                    <Input 
+                    <Input
                         id="name"
                         name="name"
                         value={formData.name}
@@ -71,7 +80,7 @@ export function ContactForm({ contactT }: ContactFormProps) {
                     <label htmlFor="email" className="block text-[10px] tracking-[0.3em] text-primary/60 uppercase mb-2">
                         {contactT.form.email}
                     </label>
-                    <Input 
+                    <Input
                         id="email"
                         name="email"
                         type="email"
@@ -85,7 +94,7 @@ export function ContactForm({ contactT }: ContactFormProps) {
                     <label htmlFor="message" className="block text-[10px] tracking-[0.3em] text-primary/60 uppercase mb-2">
                         {contactT.form.message}
                     </label>
-                    <Textarea 
+                    <Textarea
                         id="message"
                         name="message"
                         value={formData.message}
@@ -96,8 +105,8 @@ export function ContactForm({ contactT }: ContactFormProps) {
                 </div>
 
                 <div className="pt-4">
-                    <Button 
-                        type="submit" 
+                    <Button
+                        type="submit"
                         disabled={status === "sending"}
                         className="w-full bg-primary text-primary-foreground hover:bg-transparent hover:text-primary border-2 border-primary text-[11px] font-bold uppercase tracking-[0.2em] h-14 transition-all duration-500 rounded-none overflow-hidden group relative"
                     >
@@ -119,7 +128,7 @@ export function ContactForm({ contactT }: ContactFormProps) {
 
                 <AnimatePresence>
                     {status === "success" && (
-                        <motion.div 
+                        <motion.div
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0 }}
@@ -130,7 +139,7 @@ export function ContactForm({ contactT }: ContactFormProps) {
                         </motion.div>
                     )}
                     {status === "error" && (
-                        <motion.div 
+                        <motion.div
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0 }}
@@ -142,7 +151,7 @@ export function ContactForm({ contactT }: ContactFormProps) {
                     )}
                 </AnimatePresence>
             </form>
-            
+
             <div className="absolute -top-px -right-px w-8 h-8 border-t border-r border-primary/20 pointer-events-none" />
             <div className="absolute -bottom-px -left-px w-8 h-8 border-b border-l border-primary/20 pointer-events-none" />
         </motion.div>
